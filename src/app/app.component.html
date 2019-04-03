@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Bienvenu sur  {{ title }}!
+  </h1>
+
+    <h2>Les dernières Dégustations pratiquées:</h2>
+<app-degustation *ngFor="let degustation of degustations" [lenom]="degustation.nom" [millesime]="degustation.millesime"></app-degustation>
+
+<button>Créer une nouvelle dégustation</button>
+
+<app-saisie-degust [questions]="questions"></app-saisie-degust>
+</div>
